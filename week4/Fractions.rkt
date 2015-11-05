@@ -7,13 +7,13 @@
 
 (define (add-frac frac1 frac2)
   (if (or (= (snd frac1) 0) (= (snd frac2) 0)) "Incorrect input!"
-     (simplify-frac (cons (+ (* (fst frac1) (snd frac2)) (* (fst frac2) (snd frac1))) (* (snd frac1) (snd frac2)))))
+      (simplify-frac (cons (+ (* (fst frac1) (snd frac2)) (* (fst frac2) (snd frac1))) (* (snd frac1) (snd frac2)))))
 )
 
 (define (substract-frac frac1 frac2)
   (if (or (= (snd frac1) 0) (= (snd frac2) 0)) "Incorrect input!"
-  (simplify-frac (cons (- (* (fst frac1) (snd frac2)) (* (fst frac2) (snd frac1))) (* (snd frac1) (snd frac2))))
-))
+      (simplify-frac (cons (- (* (fst frac1) (snd frac2)) (* (fst frac2) (snd frac1))) (* (snd frac1) (snd frac2)))))
+)
 
 (define (mult-frac frac1 frac2)
   (cond [(or (= (snd frac1) 0) (= (snd frac2) 0)) "Incorrect input!" ]
